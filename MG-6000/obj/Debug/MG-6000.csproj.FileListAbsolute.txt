@@ -1,0 +1,6 @@
+c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\bin\Debug\MG-6000.exe.config
+c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\bin\Debug\MG-6000.exe
+c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\bin\Debug\MG-6000.pdb
+c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\obj\Debug\MG-6000.csprojResolveAssemblyReference.cache
+c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\obj\Debug\MG-6000.exe
+c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\obj\Debug\MG-6000.pdb
