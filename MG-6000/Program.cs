@@ -108,11 +108,11 @@ namespace MG_6000
                 Console.WriteLine("\t" + PsfResult);
                 Console.WriteLine("\n ===========================================================================");
                 Console.ReadLine();
-            }
+                }  
             catch {       /* ============================ PRINT OUT ERROR TO SCREEN ======================================*/
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\n =========================================================================== \n");
-                Console.WriteLine("\t ERROR: Please check your Input");
+                Console.WriteLine("\t ERROR: Please check your Input, and try again");
                 Console.WriteLine("\n ===========================================================================");
                 Console.ReadLine();
                 }
