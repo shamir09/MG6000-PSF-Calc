@@ -4,9 +4,6 @@ c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\bin\Debug\MG-
 c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\obj\Debug\MG-6000.csprojResolveAssemblyReference.cache
 c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\obj\Debug\MG-6000.exe
 c:\users\sam\documents\visual studio 2015\Projects\MG-6000\MG-6000\obj\Debug\MG-6000.pdb
-C:\Users\Sam\Documents\GitHub\MG-6000\MG-6000\bin\Debug\MG-6000.exe.config
-C:\Users\Sam\Documents\GitHub\MG-6000\MG-6000\obj\Debug\MG-6000.exe
-C:\Users\Sam\Documents\GitHub\MG-6000\MG-6000\obj\Debug\MG-6000.pdb
-C:\Users\Sam\Documents\GitHub\MG-6000\MG-6000\obj\Debug\MG-6000.csprojResolveAssemblyReference.cache
-C:\Users\Sam\Documents\GitHub\MG-6000\MG-6000\bin\Debug\MG-6000.exe
-C:\Users\Sam\Documents\GitHub\MG-6000\MG-6000\bin\Debug\MG-6000.pdb
+C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\bin\Debug\MG-6000.exe.config
+C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.exe
+C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.pdb
