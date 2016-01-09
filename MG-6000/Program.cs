@@ -14,28 +14,34 @@ namespace MG_6000
             Console.WriteLine("MG-6000  Windload Capacity Calculator: ");
 
             /* ============================= RECEIVE INPUT FROM USER & CONVERT TO CORRECT DATA TYPE =======================================*/
-            try
+            while (true)
             {
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("   Please enter the width? ");                       // Ask for Width input from User 
-                string WidthInp = Console.ReadLine();                               // Take Width input from User 
+                try
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
 
-                Console.Write("   Please enter the height? ");                      // Ask for Height input from User 
-                string HeightInp = Console.ReadLine();                              // Take Height input from User 
+                    // Ask for Width input from User 
+                    Console.Write("   Please enter the width? ");
+                    var widthDouble = double.Parse(Console.ReadLine());
+                    Console.Write("   Please enter the height? ");
+                    var heigthDouble = double.Parse(Console.ReadLine());
 
-                Double WidthDouble = double.Parse(WidthInp);
-                Double HeigthDouble = double.Parse(HeightInp);
+                    Console.WriteLine("\n =========================================================================== \n");
+                    Console.WriteLine("\t" + GetPSF(widthDouble, heigthDouble));
+                    Console.WriteLine("\n ===========================================================================");
+                    Console.WriteLine("");
+                }
 
                 /* ============================= WORK CONDITIONAL LOGIC TO CALCULATE MULL WINDLOAD CAPACITY =======================================*/
                 string PsfResult = string.Empty;
 
-                if (HeigthDouble <= 90)                  // At Height of 90"   &   Width:  30", 36", 42", 48", 54", 55", 60"            M1 / J1
+                if (heigthDouble <= 90)                  // At Height of 90"   &   Width:  30", 36", 42", 48", 54", 55", 60"            M1 / J1
                 {
                     if (WidthDouble <= 55) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +100.0 / -110.0 PSF \t M1 / J1"); }
                     else if (WidthDouble <= 60) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +100.0 / -110.0 PSF \t M1 / J1"); }
                     else if (WidthDouble > 60) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + "\"\t DOES NOT COMPLY WITH PRODUCT APPROVAL"); }
                 }
-                else if (HeigthDouble <= 96)             // At Height of 96"   &   Width:  30", 36", 42", 48", 51", 54", 60"            M1 / J1
+                else if (heigthDouble <= 96)             // At Height of 96"   &   Width:  30", 36", 42", 48", 51", 54", 60"            M1 / J1
                 {                                        // At Height of 120"   &   Width:  30", 36", 42", 48", 51", 54", 60" 66", 72"   M3 / J2
                     if (WidthDouble <= 48) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +100.0 / -110.0 PSF \t M1 / J1 \n \t \t =  +100.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
                     else if (WidthDouble <= 51) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +100.0 / -107.6 PSF \t M1 / J1 \n \t \t =  +100.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
@@ -43,7 +49,7 @@ namespace MG_6000
                     else if (WidthDouble <= 72) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +100.0 / -115.0 PSF" + "  \t *Reinforced M3 / J2"); }
                     else if (WidthDouble > 72) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + "\"\t DOES NOT COMPLY WITH PRODUCT APPROVAL"); }
                 }
-                else if (HeigthDouble <= 102)            // At Height of 102"  &   Width:  30", 36", 42", 48", 54", 57"                 M1 / J1
+                else if (heigthDouble <= 102)            // At Height of 102"  &   Width:  30", 36", 42", 48", 54", 57"                 M1 / J1
                 {                                                           // &   Width:  30", 36", 42", 48", 54", 60" 66", 71"        M3 / J2
                     if (WidthDouble <= 42) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +100.0 / -110.0 PSF \t M1 / J1 \n \t \t = +100.0 / -115.0 PSF \t M3 / J2 * Reinforced"); }
                     else if (WidthDouble <= 48) { PsfResult = (WidthDouble + "\" x " + HeigthDouble + " =  +98.2 / -98.2 PSF \t M1 / J1 \n \t \t = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
@@ -162,12 +168,12 @@ namespace MG_6000
                 Console.WriteLine("\t" + PsfResult);
                 Console.WriteLine("\n ===========================================================================");
                 Console.ReadLine();
-            }
-            catch
+            } }
+            catch (Exception e)
             {       /* ============================ PRINT OUT ERROR TO SCREEN ======================================*/
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\n =========================================================================== \n");
-                Console.WriteLine("\t ERROR: Please check your Input");
+                Console.WriteLine("\t"  );
                 Console.WriteLine("\n ===========================================================================");
                 Console.ReadLine();
             }
