@@ -10,3 +10,9 @@ C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.pdb
 C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\bin\Debug\MG-6000.exe
 C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\bin\Debug\MG-6000.pdb
 C:\Users\Sam\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.csprojResolveAssemblyReference.cache
+C:\Users\MrGlass-16\Documents\GitHub\MG6000-PSF-Calc\MG-6000\bin\Debug\MG-6000.exe.config
+C:\Users\MrGlass-16\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.exe
+C:\Users\MrGlass-16\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.pdb
+C:\Users\MrGlass-16\Documents\GitHub\MG6000-PSF-Calc\MG-6000\bin\Debug\MG-6000.exe
+C:\Users\MrGlass-16\Documents\GitHub\MG6000-PSF-Calc\MG-6000\bin\Debug\MG-6000.pdb
+C:\Users\MrGlass-16\Documents\GitHub\MG6000-PSF-Calc\MG-6000\obj\Debug\MG-6000.csprojResolveAssemblyReference.cache
