@@ -68,15 +68,15 @@ namespace MG_6000
                     if (widthDouble <= 42) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -110.0 PSF \t M1 / J1 \n \t \t = +100.0 / -115.0 PSF \t M3 / J2 * Reinforced"); }
                     else if (widthDouble <= 48) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +98.2 / -98.2 PSF \t M1 / J1 \n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
                     else if (widthDouble <= 57) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +70.0 / -70.0 PSF \t M1 / J1 \n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
-                    else if (widthDouble <= 71) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -115.0 PSF" + "  \t *Reinforced M3 / J2"); }       // M2 / J2
+                    else if (widthDouble <= 71) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -115.0 PSF" + "  \t M3 / J2 * Reinforced"); }       // M2 / J2
                     else if (widthDouble > 71) { psfResult = (widthDouble + "\" x " + heigthDouble + "\"\t DOES NOT COMPLY WITH PRODUCT APPROVAL"); }
                 }
                 else if (heigthDouble <= 108)            // At Height of 108"   &   Width:  30", 36", 42", 48", 54"                     M1 / J1
                 {                                            // At Height of 108"   &   Width:  30", 36", 42", 48", 54" 60" 66" 67"         M3 / J2
                     if (widthDouble <= 54) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +70.0 / -70.0 PSF \t M1 / J1 \n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
-                    else if (widthDouble <= 60) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -115.0 PSF" + "  \t *Reinforced M3 / J2"); }       // M3 / J2
-                    else if (widthDouble <= 66) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -111.7 PSF" + "  \t *Reinforced M3 / J2"); }       // M3 / J2
-                    else if (widthDouble <= 67) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -110.5 PSF" + "  \t *Reinforced M3 / J2"); }       // M3 / J2
+                    else if (widthDouble <= 60) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -115.0 PSF" + "  \t M3 / J2 * Reinforced" ); }       // M3 / J2
+                    else if (widthDouble <= 66) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -111.7 PSF" + "  \t M3 / J2 * Reinforced"); }       // M3 / J2
+                    else if (widthDouble <= 67) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -110.5 PSF" + "  \t M3 / J2 * Reinforced"); }       // M3 / J2
                     else if (widthDouble > 67) { psfResult = (widthDouble + "\" x " + heigthDouble + "\"\t DOES NOT COMPLY WITH PRODUCT APPROVAL"); }
                 }
                 else if (heigthDouble <= 114)            // At Height of 114"   &   Width:  30", 36", 42", 48", 51"                     M1 / J1
@@ -91,30 +91,20 @@ namespace MG_6000
                 else if (heigthDouble <= 120)            // At Height of 120"   &   Width:  30", 36", 42", 48"                      M1 / J1
                 {                                        // At Height of 120"   &   Width:  48", 54", 58"                           M2 / J2
                                                          // At Height of 120"   &   Width:  54", 60"                                M2 / J2 *Reinforced Cold Rolled
-                    if (widthDouble <= 36) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +70.0 / -70.0 PSF \t M1 / J1 \n \t \t   = +110.0 / -115.0 PSF \t M3 / J2 * Reinforced"); }
+                    if (widthDouble <= 36) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +70.0 / -70.0 PSF \t M1 / J1 \n \t \t   = +110.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
                     else if (widthDouble <= 42) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +69.9 / -69.9 PSF \t M1 / J1 \n \t \t   = +110.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
                     else if (widthDouble <= 48) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +62.1 / -62.1 PSF \t M1 / J1 \n \t \t   = +110.0 / -115.0 PSF \t M3 / J2 *Reinforced"); }
-                    else if (widthDouble <= 54)
-                    {
-                    psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +65.0 / -65.0 PSF \t M1 / J1 \n \t \t   = +100.0 / -103.9 PSF \t M3 / J2 *Reinforced");
-                    psfResult += ("\n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced Cold Rolled");
-                    }
-                    else if (widthDouble <= 58)
-                    {
-                    psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +65.0 / -65.0 PSF \t M2 / J2 *Reinforced \n \t \t   =  +95.1 / -95.1 PSF \t M3 / J2 *Reinforced");
-                    psfResult += ("\n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced Cold Rolled");
-                    }
-                    else if (widthDouble <= 60)
-                    {
-                    psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +95.1 / -95.1 PSF \t M3 / J2 * Reinforced");
-                    psfResult += ("\n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 * Reinforced Cold Rolled");
-                    }
-                    else if (widthDouble > 60) { psfResult = (widthDouble + "\" x " + heigthDouble + "\"\t DOES NOT COMPLY WITH PRODUCT APPROVAL"); }
-                }
+                    else if (widthDouble <= 54) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +65.0 / -65.0 PSF \t M1 / J1 \n \t \t   = +100.0 / -103.9 PSF \t M3 / J2 *Reinforced");
+                    psfResult += ("\n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced Cold Rolled");}
+                    else if (widthDouble <= 58) {psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +65.0 / -65.0 PSF \t M2 / J2 *Reinforced \n \t \t   =  +95.1 / -95.1 PSF \t M3 / J2 *Reinforced");
+                    psfResult += ("\n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced Cold Rolled"); }
+                    else if (widthDouble <= 60) {psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +95.1 / -95.1 PSF \t M3 / J2 *Reinforced");
+                    psfResult += ("\n \t \t   = +100.0 / -115.0 PSF \t M3 / J2 *Reinforced Cold Rolled"); }
+                    else if (widthDouble > 60) { psfResult = (widthDouble + "\" x " + heigthDouble + "\"\t DOES NOT COMPLY WITH PRODUCT APPROVAL"); }  }
                 else if (heigthDouble <= 126)
-                {          // At Height of 126" &   Width:  30", 36", 42", 48", 54", 55"           M2 / J2
-                           // At Height of 126" &   Width:  30", 36", 42", 48", 54", 55"           M3 / J2 
-                           // At Height of 126" &   Width:  30", 36", 42", 48", 54", 55"           M3 / J2  *Reinforced Cold Rolled
+                {                                        // At Height of 126" &   Width:  30", 36", 42", 48", 54", 55"           M2 / J2
+                                                         // At Height of 126" &   Width:  30", 36", 42", 48", 54", 55"           M3 / J2 
+                                                         // At Height of 126" &   Width:  30", 36", 42", 48", 54", 55"           M3 / J2  *Reinforced Cold Rolled
                     if (widthDouble <= 42) { psfResult = (widthDouble + "\" x " + heigthDouble + "\" =  +100.0 / -110.0 PSF" + "  \t *Reinforced M3 / J2"); }
 
                     else if (widthDouble <= 48)
